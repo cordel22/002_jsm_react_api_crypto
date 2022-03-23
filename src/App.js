@@ -4,7 +4,7 @@ import React from 'react';
 //  import { Layout, Typography, Space } from 'antd';
 
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails/* , Layout, Footer */ } from './components';
-// import './App.css';
+import './App.css';
 
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,12 +18,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
 
-    // <div className="app">
+<div className="app">
       
-// <div className="navbar">
-//   <Navbar />
-// </div>
-// <div className="main">
+
+<div className="main">
+   
+     <div className='routes'>
 
 
     <BrowserRouter>
@@ -38,7 +38,17 @@ const App = () => {
              <Route path="/news" element={<News />} />
           </Route>
         </Routes>
-      </BrowserRouter>      
+      </BrowserRouter>
+      </div>
+
+     </div>
+
+      <div className="footer">
+
+ </div>
+
+
+ </div>      
    
   )
 }
